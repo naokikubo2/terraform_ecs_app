@@ -22,7 +22,7 @@ ADD Gemfile.lock $APP_ROOT
 # bundle install実行。
 # (バージョンのエラーが出る為、一応bundler 2.0.2を指定)
 RUN \
-    gem install bundler:2.0.2 && \ 
+    gem install bundler:2.1.4 && \
     bundle install && \
     rm -rf ~/.gem
 
